@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<form id="Form" method="get">
+	<form id="Form" method="post">
 		<label for="name">Name</label>
 		<input type="text" id="name" required><br>
 
@@ -22,12 +22,11 @@
 		
 
 		<label for="laptop brands">Laptop Brands</label>
-		<input type="radio" name="laptop brands" id="laptop brands" value="apple" required>
-		<label for="apple">Apple</label>
-		<input type="radio" name="laptop brands" id="laptop brands" value="asus">
-		<label for="asus">Asus</label>
-		<input type="radio" name="laptop brands" id="laptop brands" value="hp">
-		<label for="hp">HP</label><br>
+			<select required id="laptop brands">
+  				<option value="apple">Apple</option>
+  				<option value="asus">Asus</option>
+  				<option value="hp">HP</option>
+			</select>
 
 
 		<label for="age">Age</label>
